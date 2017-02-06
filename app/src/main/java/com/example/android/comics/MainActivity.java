@@ -3,10 +3,11 @@ package com.example.android.comics;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 
-import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -15,10 +16,27 @@ public class MainActivity extends AppCompatActivity {
 
     private Button boton;
     private GoogleApiClient mGoogleApiClient;
+    private RecyclerView recycler;
+    private AdaptadorRecycler adaptador;
+    private ControladorDatos datos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        recycler = (RecyclerView) findViewById(R.id.listaComics);
+
+
+// Usar un administrador para LinearLayout
+        LinearLayoutManager lManager = new LinearLayoutManager(this);
+        recycler.setLayoutManager(lManager);
+
+// Crear un nuevo adaptador
+        datos=new ControladorDatos(this);
+        datos.cargar(this);
+
+        adaptador = new AdaptadorRecycler(datos.getListadaComics(),this);
+        recycler.setAdapter(adaptador);
 
        /* boton=(Button)findViewById(R.id.button2);
         boton.setOnClickListener(new View.OnClickListener() {
@@ -51,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
         //signInButton.setScopes(new Scope[]{Plus.SCOPE_PLUS_LOGIN});
        // Log.d("CONExION",String.valueOf(conexion));
 
-        if ((AccessToken.getCurrentAccessToken() == null)){
+      /*  if ((AccessToken.getCurrentAccessToken() == null)){
             goLoginScreen();
-        }
+        }*/
 
     }
 
