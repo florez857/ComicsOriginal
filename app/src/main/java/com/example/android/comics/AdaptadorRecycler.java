@@ -21,13 +21,13 @@ public class AdaptadorRecycler extends  RecyclerView.Adapter<AdaptadorRecycler.R
         // Campos de la lista
         public ImageView imagen;
         public TextView titulo;
-        public TextView votos;
+        public TextView precio;
 
         public RevistaViewHolder(View v) {
             super(v);
-            imagen = (ImageView) v.findViewById(R.id.imagen);
+            imagen = (ImageView) v.findViewById(R.id.);
             titulo = (TextView) v.findViewById(R.id.titulo);
-            votos = (TextView) v.findViewById(R.id.votos);
+            precio = (TextView) v.findViewById(R.id.votos);
         }
     }
 
