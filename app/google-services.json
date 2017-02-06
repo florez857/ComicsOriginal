@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "492932099444",
+    "project_id": "project-1037994208049198836"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492932099444:android:0fe6cdccbbef17b1",
+        "android_client_info": {
+          "package_name": "com.example.android.comics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492932099444-4c7ic41o31kb1j4tlr3d1q3cus4qjaiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnuan-4bDkUaj5A1VAy1TxYog1DmfOqAo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
