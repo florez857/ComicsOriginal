@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.facebook.AccessToken;
+
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -64,6 +66,7 @@ public class Login extends AppCompatActivity {
         loginButton = (LoginButton) findViewById(R.id.loginButton);
 
         loginButton.setReadPermissions(Arrays.asList("public_profile", "email", "user_birthday"));
+
 
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
