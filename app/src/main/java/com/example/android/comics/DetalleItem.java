@@ -30,7 +30,6 @@ public class DetalleItem extends AppCompatActivity {
     private TextView descripcion,titulo,fecha,paginas,listadoseries,listadocreadores,listadopersonajes;
     private ImageView imagen;
 
-
     private String url;
 
     @Override
@@ -61,7 +60,7 @@ public class DetalleItem extends AppCompatActivity {
                     // Takes the response from the JSON request
                     @Override
                     public void onResponse(JSONObject response) {
-                        Comic comic;
+
                         try {
 
                             if (response != null) {

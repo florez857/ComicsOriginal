@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private AdaptadorRecycler adaptador;
     private ControladorDatos datos;
     Toolbar barra;
+    AccessToken token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,10 +88,10 @@ public class MainActivity extends AppCompatActivity {
         //signInButton.setSize(SignInButton.SIZE_STANDARD);
         //signInButton.setScopes(new Scope[]{Plus.SCOPE_PLUS_LOGIN});
        // Log.d("CONExION",String.valueOf(conexion));
-
-      /*  if ((AccessToken.getCurrentAccessToken() == null)){
+           AccessToken token= new AccessToken()
+        if ((AccessToken.getCurrentAccessToken() == null)){
             goLoginScreen();
-        }*/
+        }
 
 
 

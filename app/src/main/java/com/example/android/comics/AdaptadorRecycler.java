@@ -107,7 +107,7 @@ public class AdaptadorRecycler extends  RecyclerView.Adapter<AdaptadorRecycler.R
     }
 
     @Override
-    public void onBindViewHolder(RevistaViewHolder viewHolder, int i) {
+    public void onBindViewHolder(RevistaViewHolder viewHolder, final int i) {
         id=i;
         Glide.with(context)
                 .load(items.get(i).getUrlimagen())
@@ -122,9 +122,8 @@ public class AdaptadorRecycler extends  RecyclerView.Adapter<AdaptadorRecycler.R
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(context.getApplicationContext(),DetalleItem.class);
-
-                Log.d("id que se pasa a intent",ListadaComics.get(id).getId());
-                intent.putExtra("id",ListadaComics.get(id).getId());
+                Log.d("id que se pasa a intent",ListadaComics.get(i).getId());
+                intent.putExtra("id",ListadaComics.get(i).getId());
                 context.startActivity(intent);
                 Log.d("llamada a intent","llama");
             }

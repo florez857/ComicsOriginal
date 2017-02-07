@@ -38,7 +38,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:text="Titulo"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -68,7 +68,7 @@
                     android:id="@+id/fechaComic" />
 
                 <TextView
-                    android:text="50"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
@@ -91,7 +91,7 @@
                     android:id="@+id/PaginasComic" />
 
                 <TextView
-                    android:text="50"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -117,7 +117,7 @@
                     />
 
                 <TextView
-                    android:text="50"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="left"
@@ -131,7 +131,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="10dp"
-                android:text="Listado"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -144,7 +144,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="10dp"
-                android:text="Listado"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -159,7 +159,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="10dp"
                 android:paddingBottom="10dp"
-                android:text="Listado"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
