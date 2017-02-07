@@ -33,10 +33,10 @@ public class PerfilFacebook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil_facebook);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarDetalle);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Perfil de Facebook");
+        getSupportActionBar().setTitle("Descripcion");
 
         nombre=(TextView)findViewById(R.id.nombre);
         email=(TextView)findViewById(R.id.email);

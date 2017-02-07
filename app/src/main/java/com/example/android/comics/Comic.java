@@ -11,6 +11,16 @@ public class Comic {
     private String paginas;
     private String Descripcion;
     private String Urlimagen;
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
 
 
     public Comic(String titulo, String urlimagen, String descripcion, String paginas, String precio) {
